@@ -1,0 +1,20 @@
+<%= form_for @namedalias do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :shortname %><br />
+    <%= f.text_area :shortname %>
+  </p>
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_area :url %>
+  </p>
+  <p>
+    <%= f.label :longname %><br />
+    <%= f.text_area :longname %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

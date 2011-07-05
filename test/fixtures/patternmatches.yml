@@ -1,0 +1,11 @@
+one:
+  name: MyString
+  shortnamepattern: MyString
+  urlpattern: MyString
+  priority: 
+
+two:
+  name: MyString
+  shortnamepattern: MyString
+  urlpattern: MyString
+  priority: 

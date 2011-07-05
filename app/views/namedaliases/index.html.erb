@@ -1,0 +1,23 @@
+<% title "Namedaliases" %>
+
+<table>
+  <tr>
+    <th>Shortname</th>
+    <th>Url</th>
+    <th>Longname</th>
+    <th>Description</th>
+  </tr>
+  <% for namedalias in @namedaliases %>
+    <tr>
+      <td><%= namedalias.shortname %></td>
+      <td><%= namedalias.url %></td>
+      <td><%= namedalias.longname %></td>
+      <td><%= namedalias.description %></td>
+      <td><%= link_to "Show", namedalias %></td>
+      <td><%= link_to "Edit", edit_namedalias_path(namedalias) %></td>
+      <td><%= link_to "Destroy", namedalias, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Namedalias", new_namedalias_path %></p>

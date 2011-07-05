@@ -1,0 +1,24 @@
+<% title "Patternmatch" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @patternmatch.name %>
+</p>
+<p>
+  <strong>Shortnamepattern:</strong>
+  <%= @patternmatch.shortnamepattern %>
+</p>
+<p>
+  <strong>Urlpattern:</strong>
+  <%= @patternmatch.urlpattern %>
+</p>
+<p>
+  <strong>Priority:</strong>
+  <%= @patternmatch.priority %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_patternmatch_path(@patternmatch) %> |
+  <%= link_to "Destroy", @patternmatch, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", patternmatches_path %>
+</p>

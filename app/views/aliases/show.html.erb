@@ -1,0 +1,24 @@
+<% title "Alias" %>
+
+<p>
+  <strong>Shortname:</strong>
+  <%= @alias.shortname %>
+</p>
+<p>
+  <strong>Url:</strong>
+  <%= @alias.url %>
+</p>
+<p>
+  <strong>Longname:</strong>
+  <%= @alias.longname %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @alias.description %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_alias_path(@alias) %> |
+  <%= link_to "Destroy", @alias, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", aliases_path %>
+</p>

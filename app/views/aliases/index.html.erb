@@ -1,0 +1,23 @@
+<% title "Aliases" %>
+
+<table>
+  <tr>
+    <th>Shortname</th>
+    <th>Url</th>
+    <th>Longname</th>
+    <th>Description</th>
+  </tr>
+  <% for alias in @aliases %>
+    <tr>
+      <td><%= alias.shortname %></td>
+      <td><%= alias.url %></td>
+      <td><%= alias.longname %></td>
+      <td><%= alias.description %></td>
+      <td><%= link_to "Show", alias %></td>
+      <td><%= link_to "Edit", edit_alias_path(alias) %></td>
+      <td><%= link_to "Destroy", alias, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Alias", new_alias_path %></p>

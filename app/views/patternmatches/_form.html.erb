@@ -1,0 +1,20 @@
+<%= form_for @patternmatch do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :shortnamepattern %><br />
+    <%= f.text_field :shortnamepattern %>
+  </p>
+  <p>
+    <%= f.label :urlpattern %><br />
+    <%= f.text_field :urlpattern %>
+  </p>
+  <p>
+    <%= f.label :priority %><br />
+    <%= f.text_field :priority %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

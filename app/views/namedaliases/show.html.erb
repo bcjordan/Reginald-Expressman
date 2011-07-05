@@ -1,0 +1,24 @@
+<% title "Namedalias" %>
+
+<p>
+  <strong>Shortname:</strong>
+  <%= @namedalias.shortname %>
+</p>
+<p>
+  <strong>Url:</strong>
+  <%= @namedalias.url %>
+</p>
+<p>
+  <strong>Longname:</strong>
+  <%= @namedalias.longname %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @namedalias.description %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_namedalias_path(@namedalias) %> |
+  <%= link_to "Destroy", @namedalias, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", namedaliases_path %>
+</p>

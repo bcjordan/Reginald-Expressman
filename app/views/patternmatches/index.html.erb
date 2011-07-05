@@ -1,0 +1,23 @@
+<% title "Patternmatches" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Shortnamepattern</th>
+    <th>Urlpattern</th>
+    <th>Priority</th>
+  </tr>
+  <% for patternmatch in @patternmatches %>
+    <tr>
+      <td><%= patternmatch.name %></td>
+      <td><%= patternmatch.shortnamepattern %></td>
+      <td><%= patternmatch.urlpattern %></td>
+      <td><%= patternmatch.priority %></td>
+      <td><%= link_to "Show", patternmatch %></td>
+      <td><%= link_to "Edit", edit_patternmatch_path(patternmatch) %></td>
+      <td><%= link_to "Destroy", patternmatch, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Patternmatch", new_patternmatch_path %></p>
